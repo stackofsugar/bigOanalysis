@@ -1,11 +1,13 @@
 #pragma once
 #include <iostream>
+#include <algorithm>
 #include <sstream>
 #include <iomanip>
-#include <array>
+#include <vector>
 #include <string>
 #include <chrono>
 #include <ctime>
+#include <random>
 #include <fstream>
 #include "../include/algorithms.h"
 

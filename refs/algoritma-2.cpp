@@ -3,7 +3,7 @@
 //#include<chrono>
 using namespace std;
 
-void HOME(int arr[], int n){
+void HOME(int *arr, int n){
 	int i, key, j;
 	for(i=1; i<n; i++){
 		key = arr[i];
