@@ -50,7 +50,7 @@ public:
 };
 
 void _debugTestPrint(Timer &obj) {
-    cout << "Time: " << obj.getms() << " ms (" << obj.getus() << " us)\n";
+    cout << obj.getus() << " us\n";
 }
 
 void initTimeHandler(string &name) {
@@ -75,8 +75,8 @@ void testWithFunctor(Ft func, string case_name, ofstream &file, vector<vector<in
     int *arr = nullptr;
     Timer test(false);
     for (int i = 1; i <= num_case; i++) {
-        test.start();
         arr = thiscase[i - 1].data();
+        test.start();
         func(arr, (i * multiplier));
         test.stop();
         cout << "Length: " << i * multiplier << ": ";
