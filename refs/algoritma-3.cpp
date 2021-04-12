@@ -5,7 +5,7 @@ using namespace std;
 
 int eraseAT(string str) {
 	string acc;
-	bool a, b;
+	bool a = false, b = false;
 	int x = 0;
 	if (str.length() == 0)
 		return 0;
